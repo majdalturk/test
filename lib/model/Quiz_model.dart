@@ -39,7 +39,7 @@ class QuestionModel {
       question: map['question'] ?? '',
       availableTime: map['availableTime'] ?? 0,
       answers: List<AnswerModel>.from(
-          map['answer']?.map((x) => AnswerModel.fromMap(x))),
+          map['answers'].map((x) => AnswerModel.fromMap(x))),
     );
   }
 
